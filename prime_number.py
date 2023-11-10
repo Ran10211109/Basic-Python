@@ -2,12 +2,10 @@
 n = 10
 count = 0
 for i in range(1, n + 1):
-        if n % i == 0:
-            count += 1
+    if n % i == 0:
+        count += 1
+
 if count == 2:
-    print("素数である")
-
+    print("{}は素数である".format(n))
 else:
-    print("素数ではない")
-
-
+    print("{}は素数ではない".format(n))
