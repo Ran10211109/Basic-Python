@@ -11,4 +11,4 @@ while b != 0:
     a = b
     b = r
 
-print("最大公約数は{}です。".format(q))
+print("最大公約数は{}です。".format(a))
