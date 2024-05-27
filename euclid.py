@@ -9,15 +9,16 @@ def euclid(a,b):
         r = a % b
         a = b
         b = r
-    print("最大公約数は", int(a))
-    
+    return int(a) 
 
 def mutually_prime(a,b):
     gcd = euclid(a,b)
     if gcd ==1:
-        print(f"{a}と{b}は互いに素です")
+        return True
     else:
-        print(f"{a}と{b}は互いに素ではない")
+        return False
 
-mutually_prime(a,b)
+print("最大公約数:", euclid(a, b))
+
+print("互いに素であるか:", mutually_prime(a, b))
     

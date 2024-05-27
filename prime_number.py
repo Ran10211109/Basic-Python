@@ -16,10 +16,11 @@ def prime_number(a):
         print("自然数（2 以上）を入力してください")
         return False
     
-    count = 0
     for i in range(1, n + 1):
         if n % i == 0:
-            count += 1
+            return False
+        
+    return True
     
     if count == 2:
         print("素数です")
